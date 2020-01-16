@@ -15,6 +15,7 @@ CREATE TABLE "departments" (
 
 CREATE TABLE "dept_manager" (
     "dept_no" VARCHAR   NOT NULL,
+    "emp_no" INT   NOT NULL,
     "from_date" DATE   NOT NULL,
     "to_date" DATE   NOT NULL,
     CONSTRAINT "pk_dept_manager" PRIMARY KEY (
