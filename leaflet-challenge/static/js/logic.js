@@ -14,7 +14,7 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
     maxZoom: 18,
     id: 'mapbox/streets-v11',
-    accessToken: 'pk.eyJ1IjoiYXlkYW5uIiwiYSI6ImNrNXlpcDU5ZTBrZHUzbnI3MDIxNThvdWoifQ.wiy5egLclWIOS44Pwv_KbA'
+    accessToken: token
 }).addTo(myMap);
 
 // Pulling Data and running Marker Builder
@@ -40,7 +40,7 @@ function build(earthquake) {
 
     if (mag > 5) {
         col = '#ff4000'
-    } 
+    }
     else if (mag > 4) {
         col = '#ff8000'
     }
@@ -55,7 +55,7 @@ function build(earthquake) {
     }
     else if (mag > 0) {
         col = '#80ff00'
-    } 
+    }
     else {
         col = 'white'
         opa = 0
@@ -73,7 +73,7 @@ function build(earthquake) {
     L.geoJSON(earthquake, {
         pointToLayer: function (feature, latlng) {
             return L.circleMarker(latlng, geojsonMarkerOptions)
-                    .bindPopup('<h3>' + `${earthquake.properties.place}` + '</h3>'  
+                    .bindPopup('<h3>' + `${earthquake.properties.place}` + '</h3>'
                         + '<h5>' + `Magnitude: ${earthquake.properties.mag}` + '</h5>'
                         + '<h5>' + `Time: ${new Date(earthquake.properties.time)}` + '</h5>');
         }
