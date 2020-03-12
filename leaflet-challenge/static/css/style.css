@@ -1,0 +1,27 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+#map,
+body,
+html {
+  height: 100%;
+}
+
+.info-legend {
+  line-height: 15px;
+  background-color: #F8F8F8;
+  border: 5px solid #F8F8F8;
+  border-radius: 10%;
+}
+
+ul {
+  list-style-type: none;
+  list-style-position: inside;
+  padding: 0;
+}
+
+li {
+  border: 1px solid #F8F8F8;
+}
