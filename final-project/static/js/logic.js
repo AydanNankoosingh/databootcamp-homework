@@ -1,4 +1,4 @@
-const API_KEY = "pk.eyJ1IjoiYXlkYW5uIiwiYSI6ImNrNXlpcDU5ZTBrZHUzbnI3MDIxNThvdWoifQ.wiy5egLclWIOS44Pwv_KbA";
+const API_KEY = "";
 
 
 var mymap = L.map('map').setView([37.0902, -95.7129], 3.5);
@@ -20,11 +20,9 @@ var manufacturer = d3.select('#man').text().slice(14).toLowerCase()
 
 console.log(manufacturer)
 
-alert('hi4');
 
 d3.json(`static/data/${manufacturer}.json`, function(data) {
 
-    alert('hi5');
 
     var plot_data;
 
