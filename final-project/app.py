@@ -10,7 +10,7 @@ from joblib import dump, load
 model = load('model.joblib')
 neigh = load('neigh.joblib')
 
-base_input = [2009, 2.6, 120000] + [0]*20 # needs []
+base_input = [2009, 2.6, 120000] + [0]*20 
 manufacturers = ['manufacturer_bmw',
        'manufacturer_cadillac', 'manufacturer_chevrolet',
        'manufacturer_datsun', 'manufacturer_dodge', 'manufacturer_ford',
@@ -22,7 +22,7 @@ manufacturers = ['manufacturer_bmw',
        'manufacturer_volvo']
 
 # Bins for KNN
-bins = [500, 1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000, 10000, 15000, 
+bins = [500, 1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000, 10000, 15000,
         20000, 25000, 30000, 35000, 40000, 45000, 50000, 55000, 60000, 65000,
         70000, 75000, 80000]
 

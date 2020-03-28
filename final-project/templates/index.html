@@ -12,9 +12,9 @@
     <!-- <link rel="stylesheet" href="style.css"> -->
 </head>
 
-<body style='background:#0099ff'>
+<body style="background-image: url('https://wallpaperaccess.com/full/477608.jpg')"> 
 
-    <nav class="navbar navbar-light bg-light">
+    <nav class="navbar navbar-light bg-light sticky-top">
         <a class="navbar-brand" href="index.html">
           <img src="{{ url_for('static', filename='images/truck.jpg') }}" width="30" height="30" class="d-inline-block align-top" alt="">
           Truck Appraisal App
@@ -23,13 +23,13 @@
 
     <br>
 
-    <div class="jumbotron jumbotron" style='margin-bottom: 150px'>
+    <div class="jumbotron jumbotron" style='margin-bottom: 50px; background:none'>
         <div class="container">
-            <h3 class="display-6">Tell us about your truck...</h3>
+            <h5 class="display-10">Tell us about your truck</h5>
          
-            <div class='container-fluid' style='background:#484848'>
+            <div class='container-fluid' style='background:none'>    
 
-                <form style='margin-right: 50px; margin-left: 50px;' method='POST' action='/get_data'>
+                <form style='margin-right: 50px; margin-left: 50px; background:none' method='POST' action='/get_data'>
                     <div class="form-group">
                         <label for="year">Year</label>
                         <input type="number" class="form-control" id="year" aria-describedby="emailHelp" placeholder="eg. 2020" name="year">

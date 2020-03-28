@@ -25,9 +25,9 @@
 
 </head>
 
-<body style='background:grey'>
+<body style="background-image: url('https://wallpaperaccess.com/full/477608.jpg')">
     
-    <nav class="navbar navbar-light bg-light">
+    <nav class="navbar navbar-light bg-light sticky-top">
         <a class="navbar-brand" href="index.html">
           <img src="{{ url_for('static', filename='images/truck.jpg') }}" width="30" height="30" class="d-inline-block align-top" alt="">
           Truck Appraisal App
@@ -36,11 +36,11 @@
 
     <br>
 
-    <div class="jumbotron jumbotron-fluid">
+    <div class="jumbotron jumbotron-fluid" style='background:none'>
         <div class="container">
             <h5 class="display-8">Results</h5>
           
-            <ul class="list-group">
+            <ul class="list-group" style='background:none'>
                 <li class="list-group-item">Year: {{ year }}</li>
                 <li class="list-group-item" id='man'>Manufacturer: {{ manufacturer }}</li>
                 <li class="list-group-item">Model: {{ model }}</li>
