@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Pickups</title>
+
+    <!-- Bring in our bootstrap stylesheet -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+
+<body style='background:#0099ff'>
+
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">
+          <img src="{{ url_for('static', filename='images/truck.jpg') }}" width="30" height="30" class="d-inline-block align-top" alt="">
+          Truck Appraisal App
+        </a>
+    </nav>
+
+    <br>
+
+    <div class="jumbotron jumbotron" style='margin-bottom: 150px'>
+        <div class="container">
+            <h3 class="display-6">Tell us about your truck...</h3>
+         
+            <div class='container-fluid' style='background:#484848'>
+
+                <form style='margin-right: 50px; margin-left: 50px;' method='POST' action='/get_data'>
+                    <div class="form-group">
+                        <label for="year">Year</label>
+                        <input type="number" class="form-control" id="year" aria-describedby="emailHelp" placeholder="eg. 2020" name="year">
+                    </div>
+                    <div class="form-group">
+                        <label for="manufacturer">Manufacturer</label>
+                        <input type="text" class="form-control" id="manufacturer" aria-describedby="emailHelp" placeholder="eg. Ram" name="manufacturer">
+                    </div>
+                    <div class="form-group">
+                        <label for="model">Model</label>
+                        <input type="text" class="form-control" id="model" aria-describedby="emailHelp" placeholder="eg. 1500" name="model">
+                    </div>
+                    <div class="form-group">
+                        <label for="condition">Condition</label>
+                        <select multiple class="form-control" id="condition" name="condition">
+                            <option>New</option>
+                            <option>Like New</option>
+                            <option>Excellent</option>
+                            <option>Good</option>
+                            <option>Fair</option>
+                            <option>Salvage</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="odometer">Mileage</label>
+                        <input type="number" class="form-control" id="odometer" aria-describedby="emailHelp" placeholder="eg. 100000" name="odometer">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            
+                <br>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>
