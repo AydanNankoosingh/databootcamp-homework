@@ -24,8 +24,9 @@ from joblib import dump, load
 
 ## Javascript CDN's
 
-[Bootstrap](https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css) \
-[Leaflet](https://unpkg.com/leaflet@1.6.0/dist/leaflet.js)
+[Bootstrap](httpsstackpath.bootstrapcdn.combootstrap4.3.1cssbootstrap.min.css) 
+[Leaflet](httpsunpkg.comleaflet@1.6.0distleaflet.js) 
+[D3](httpscdnjs.cloudflare.comajaxlibsd33.5.17d3.min.js)
 
 ## Data
-The [data](https://www.kaggle.com/austinreese/craigslist-carstrucks-data) was in CSV format, from Kaggle, scraped by Austin Reese. It was used to train the models, as well as to build the Leaflet plot.
+The [data](httpswww.kaggle.comaustinreesecraigslist-carstrucks-data) was in CSV format, from Kaggle, scraped by Austin Reese. It was used to train the models, as well as to build the Leaflet plot.
