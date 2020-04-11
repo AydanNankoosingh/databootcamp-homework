@@ -4,7 +4,7 @@
 <head>
 
     <meta charset="UTF-8">
-    <title>Pickups</title>
+    <title>Truck Appraisal App</title>
 
     <!-- Bring in our bootstrap stylesheet -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -25,7 +25,6 @@
 
     <div class="jumbotron jumbotron" style='margin-bottom: 50px; background:none'>
         <div class="container">
-            <h5 class="display-10">Tell us about your truck</h5>
          
             <div class='container-fluid' style='background:none'>    
 
@@ -42,6 +41,18 @@
                         <label for="model">Model</label>
                         <input type="text" class="form-control" id="model" aria-describedby="emailHelp" placeholder="eg. 1500" name="model">
                     </div>
+                    <div class="form-group">
+                        <label for="condition">Drive</label>
+                        <select multiple class="form-control" id="condition" name="drive">
+                            <option>4WD</option>
+                            <option>FWD</option>
+                            <option>RWD</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="model">Cylinders</label>
+                        <input type="text" class="form-control" id="model" aria-describedby="emailHelp" placeholder="eg. 8" name="cylinders">
+                    </div>                    
                     <div class="form-group">
                         <label for="condition">Condition</label>
                         <select multiple class="form-control" id="condition" name="condition">
